@@ -4,13 +4,14 @@ Note: Code is kept private, can show on a need-to-know-basis.
 
 This project implements an image recognition system using a neural network. 
 
-The neural network classifies images using a single hidden layer. The data includes black and white images of the 4 classes automobile, bird, frog, and ship. 
+The neural network classifies images using a single hidden layer. The data includes black and white images of the 4 classes: automobile, bird, frog, and ship. 
 
 Model definition:
 
-The neural network has a sigmoid activation function for the hidden layer, and a softmax on the output layer. The output layer is a probability distribution over the 4 classes. So, each element in the output vector represents the probability that the input vector x belongs to that particular class. There are 2 types of initialization possible:
+The neural network uses a sigmoid activation function for the hidden layer, and a softmax on the output layer. The output layer is a probability distribution over the 4 classes. So, each element in the output vector represents the probability that the input vector x belongs to that particular class. There are 2 types of initialization possible:
 1. Random: The weights are initialized randomly from a uniform distribution from -0.1 to +0.1. The bias parameters are set to 0
-2. Zero: ALl weights are initialized to 0.
+2. Zero: All weights are initialized to 0.
+The desired initialization is set via a command line flag.
 
 The learning rate is set via a command line flag.
 
